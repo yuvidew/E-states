@@ -1,50 +1,87 @@
-# Welcome to your Expo app 👋
+# Estate - React Native Application
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Estate is a React Native application designed to provide users with a seamless experience for exploring and managing real estate properties. The application leverages modern technologies such as Tailwind CSS for styling, Clerk for user authentication, and Convex.dev for backend data management.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+* User Authentication with Clerk
+* Property Listings and Search
+* Property Details and Image Gallery
+* User Dashboard and Profile Management
+* Add and Manage Properties
+* Data Storage and Retrieval with Convex.dev
+* Responsive Design with Tailwind CSS
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Technologies Used
 
-2. Start the app
+* **React Native** - For building the mobile application
+* **Tailwind CSS** - For responsive and utility-first styling
+* **Clerk** - For authentication and user management
+* **Convex.dev** - For backend data management
 
-   ```bash
-   npx expo start
-   ```
+## 📦 Installation
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+1. Clone the repository:
 
 ```bash
-npm run reset-project
+git clone https://github.com/yuvidew/estate-app.git
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Navigate to the project directory:
 
-## Learn more
+```bash
+cd estate-app
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Install dependencies:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm install
+```
 
-## Join the community
+4. Setup environment variables:
 
-Join our community of developers creating universal apps.
+* Create a `.env` file in the root directory.
+* Add the required Clerk and Convex.dev keys:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY
+CONVEX_DEPLOYMENT
+EXPO_PUBLIC_CONVEX_URL
+VITE_CLERK_FRONTEND_API_URL
+
+```
+
+5. Run the application:
+
+```bash
+npx react-native start
+npx react-native run-android  # For Android
+npx react-native run-ios     # For iOS
+```
+
+## ✅ Testing
+
+Run tests using the command:
+
+```bash
+npm run test
+```
+
+
+## 🌐 API Endpoints
+
+* **Authentication**: Managed by Clerk.
+* **Data Storage and Retrieval**: Managed by Convex.dev.
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements.
+
+## 📧 Contact
+
+For any inquiries or support, please contact [your.email@example.com](mailto:yd00102@email.com).
